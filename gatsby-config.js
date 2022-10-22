@@ -192,6 +192,7 @@ const pwaPlugins = [
 ]
 
 module.exports = {
+  pathPrefix: "/blog",
   siteMetadata,
   plugins: [
     ...corePlugins,
