@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run : npm install --legacy-peer-deps --prefer-dedupe
-      - run : gatsby build --prefix-paths
+      - run : npm run build
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.ACCESS_TOKEN }}
